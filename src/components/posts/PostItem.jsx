@@ -156,7 +156,7 @@ function PostItem({post, onPostUpdated, onPostDeleted, isSinglePostView = false}
             <Link to={`/${post.author?.username}`} className='w-12 h-12 rounded-full mr-4 flex-shrink-0'>
                 {post.author?.profilePicture ? (
                     <img 
-                    src={`/${post.author.profilePicture}`} 
+                    src={`${post.author.profilePicture}`} 
                     alt={post.author.username} 
                     className='w-full h-full object-cover rounded-full' />
                 ) : (
